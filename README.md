@@ -1,4 +1,4 @@
-# ROS 2 Learning Journey 🤖
+# ROS 2 Learning Journey 
 
 This repository contains my learning and practice work while learning **ROS 2 (Robot Operating System 2)** using Ubuntu and Python.
 
@@ -6,7 +6,7 @@ The goal of this repository is to understand the fundamentals of ROS 2 and gradu
 
 ---
 
-## 🛠️ Environment
+##  Environment
 
 * **OS:** Ubuntu
 * **ROS 2:** Lyrical
@@ -18,7 +18,7 @@ The goal of this repository is to understand the fundamentals of ROS 2 and gradu
 
 ---
 
-# 📚 What I Have Learned
+# What I Have Learned
 
 ## 1. ROS 2 Nodes
 
@@ -293,7 +293,7 @@ Actions are useful when an operation takes time and we need feedback while it is
 
 ---
 
-# 🐢 Turtle Controller
+#  Turtle Controller
 
 The latest project is a Python ROS 2 Node that controls the Turtlesim turtle.
 
@@ -319,7 +319,7 @@ performs three main tasks:
           ┌───────────┐
           │  Turtlesim │
           │            │
-          │     🐢     │
+          │          │
           └─────┬─────┘
 
                 ↑
@@ -345,13 +345,13 @@ performs three main tasks:
 
 ---
 
-# 🔄 Complete Communication Flow
+#  Complete Communication Flow
 
 ```text
                      ┌─────────────────┐
                      │    Turtlesim    │
                      │                 │
-                     │       🐢        │
+                     │               │
                      └───────┬─────────┘
                              │
                              │ Pose
@@ -380,7 +380,7 @@ performs three main tasks:
 
 ---
 
-# 🧪 Useful ROS 2 Commands Learned
+#  Useful ROS 2 Commands Learned
 
 ## Check Nodes
 
