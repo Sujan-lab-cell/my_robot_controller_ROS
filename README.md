@@ -379,15 +379,15 @@ This makes the README much clearer because someone visiting your GitHub can imme
 
 ## RQT Graph
 
-![RQT Graph](images/rqt_graph.png)
+![RQT Graph](output1.png)
 
 ## Turtlesim Running
 
-![Turtlesim Running](images/turtlesim.png)
+![Turtlesim Running](output2.png)
 
 ## Turtle Controller
 
-![Turtle Controller](images/turtle_controller.png)
+![Turtle Controller](output3.png)
 
 #  Complete Communication Flow
 
