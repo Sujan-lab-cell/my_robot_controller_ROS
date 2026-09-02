@@ -293,21 +293,41 @@ Actions are useful when an operation takes time and we need feedback while it is
 
 ---
 
-#  Turtle Controller
+#  Turtle Controller Project
 
-The latest project is a Python ROS 2 Node that controls the Turtlesim turtle.
+This project is a Python-based ROS 2 Node that controls a turtle in the Turtlesim simulation.
 
-The Node:
+The `turtle_controller` Node is responsible for:
 
-`turtle_controller`
+- Controlling the turtle's movement using the `/turtle1/cmd_vel` topic.
+- Receiving the turtle's current position using the `/turtle1/pose` topic.
+- Checking whether the turtle is on the left or right side.
+- Changing the turtle's pen color using the `/turtle1/set_pen` service depending on its position.
 
-performs three main tasks:
+## 🔄 How the Project Works
 
-* Controls turtle movement
-* Monitors turtle position
-* Changes the turtle's pen color when it crosses a specific position
+The turtle continuously moves inside the Turtlesim environment.
+
+The `turtle_controller` receives the turtle's position from:
 
 ```text
+             Turtle Position
+                    |
+                    ↓
+             Read x position
+                    |
+             ┌──────┴──────┐
+             ↓             ↓
+        Right Side      Left Side
+             |             |
+             ↓             ↓
+       Change Pen       Change Pen
+          Color             Color
+             |             |
+             └──────┬──────┘
+                    ↓
+              Turtle draws
+
                 Pose
 
          /turtle1/pose
@@ -343,7 +363,31 @@ performs three main tasks:
                      /turtle1/set_pen
 ```
 
+This makes the README much clearer because someone visiting your GitHub can immediately understand:
+
+**“What did this person actually build?”**
+
+→ A ROS 2 turtle controller  
+→ Turtle movement is controlled  
+→ Position is received  
+→ Left/right position is detected  
+→ Pen color changes accordingly  
+→ The turtle draws in Turtlesim  
+→ RQT Graph shows the ROS communication.
 ---
+# 📸 Project Demo
+
+## RQT Graph
+
+![RQT Graph](images/rqt_graph.png)
+
+## Turtlesim Running
+
+![Turtlesim Running](images/turtlesim.png)
+
+## Turtle Controller
+
+![Turtle Controller](images/turtle_controller.png)
 
 #  Complete Communication Flow
 
